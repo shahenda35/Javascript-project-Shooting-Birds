@@ -1,0 +1,206 @@
+body{
+
+    background-image: url(/images/back.jpg);
+    
+
+}
+.main{
+    margin-left: 35%;
+    margin-right: 35%;
+    text-align: center;
+    padding: 30px;
+    border: 3px solid;
+    border-radius: 30px;
+    border-color: rgb(196, 196, 196);  
+    background-color: rgba(255, 255, 255, 0.7);
+    margin-top:15px;
+    
+}
+select{
+
+    background-color: aliceblue;
+    border: 3px solid;
+    border-radius: 10px;
+    padding: 5px 3px;
+
+}
+
+input{
+    
+    background-color: aliceblue;
+    border: 3px solid;
+    border-radius: 10px;
+    padding: 5px 3px;
+    
+
+
+}
+
+.hidden{
+
+    display: none;
+}
+
+.Error{
+    color: red;
+
+}
+.gobttn{
+    border: 2px;
+    border-radius: 10px;
+    border-color: black;
+    border-style:outset;
+    padding: 5px 25px;
+    background-color:green;
+    color: white;
+    font-size: 20px;
+    display: block;
+    margin-inline: auto;
+    /* margin-left: 33%; */
+    margin-top: 5%;
+    
+}
+img{
+    width: 100px;
+    height: 60px;
+    
+
+}
+
+.bird{
+    display: inline-flex;
+}
+
+/* .local-storage{
+    display: block;
+} */
+
+
+/*page2*/
+.birdsimgs{
+    position: absolute; 
+    width: 185px;
+    height: 115px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.player-s{
+      /* margin-left: 35%; */
+    /* margin-right: 90%; */
+    padding: 15px;
+    /* border: 3px solid; */
+    border-radius: 10px;
+    /* border-color: rgba(196, 196, 196, 0.295);   */
+    background-color: rgba(255, 255, 255, 0.3);
+    display: inline-flex;
+    width: 180px;
+    text-align: center;
+}
+
+
+.time-s{
+    /* margin-left: 35%; */
+    /* margin-right: 90%; */
+    padding: 15px;
+    /* border: 3px solid; */
+    border-radius: 10px;
+    /* border-color: rgba(196, 196, 196, 0.295);   */
+    background-color: rgba(255, 255, 255, 0.3);
+    display: inline-flex;
+    width: 180px;
+    text-align: center;
+    
+}
+
+.score-s{
+    padding: 15px;
+    /* border: 3px solid; */
+    border-radius: 10px;
+    /* border-color: rgba(196, 196, 196, 0.295);   */
+    background-color: rgba(255, 255, 255, 0.3);
+    display: inline-flex;
+    width: 180px;
+    text-align: center;
+    
+}
+
+.killed-s{
+    padding: 15px;
+    /* border: 3px solid; */
+    border-radius: 10px;
+    /* border-color: rgba(196, 196, 196, 0.295);   */
+    background-color: rgba(255, 255, 255, 0.3);
+    display: inline-flex;
+    width: 180px;
+    text-align: center;
+    
+}
+
+.win{
+    margin-left: 35%;
+    margin-right: 35%;
+    text-align: center;
+    padding: 30px;
+    border: 3px solid;
+    border-radius: 30px;
+    border-color: rgb(196, 196, 196);  
+    background-color: rgba(255, 255, 255, 0.7);
+    margin-top:15px;
+    color: green;
+
+}
+.lose{
+    margin-left: 35%;
+    margin-right: 35%;
+    text-align: center;
+    padding: 30px;
+    border: 3px solid;
+    border-radius: 30px;
+    border-color: rgb(196, 196, 196);  
+    background-color: rgba(255, 255, 255, 0.7);
+    margin-top:15px;
+    color: red;
+    
+}
+
+.bomb{
+    position: absolute; 
+    width: 150px;
+    height: 150px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.try-again{
+    border: 2px;
+    border-radius: 10px;
+    border-color: black;
+    border-style:outset;
+    padding: 5px 25px;
+    background-color:green;
+    color: white;
+    font-size: 20px;
+    display: block;
+    margin-inline: auto;
+    /* margin-left: 33%; */
+    margin-top: 5%;
+}
+
+.lose-bird{
+    display: block;
+    margin-inline: auto;
+    margin-top: 15px;
+    width: 120px;
+    height: 100px;
+}
+
+.win-bird{
+    display: block;
+    margin-inline: auto;
+    margin-top: 15px;
+    width: 120px;
+    height: 100px;
+}
