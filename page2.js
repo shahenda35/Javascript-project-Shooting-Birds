@@ -124,7 +124,7 @@ window.addEventListener("load", function(){
                 Message.append(trybttn);
 
                 trybttn.onclick=function(){
-                    location.href='../page1.html';
+                    location.href='../index.html';
                 }   
                 
                 let d = new Date();
