@@ -29,25 +29,29 @@ window.addEventListener("load", function(){
     
             }
              else{
+                checkError.classList.add('hidden');
+                nameError.classList.add('hidden');
                 secondbutton.classList.remove('hidden');
                 welcome.innerHTML="Welcome"+ " " + Entername.value
                 div1.classList.add('hidden');
                 div2.classList.add('hidden');
                 
+                // Display storage data only on success
+                let lastNameData = localStorage.getItem("name");
+                let lastScoreData = localStorage.getItem("score");
+                let lastDateData = localStorage.getItem("date");
+                
+                if(lastNameData) storageN.innerHTML+="Last name: " + lastNameData;
+                if(lastScoreData) storageS.innerHTML+="last Score: "+lastScoreData;
+                if(lastDateData) storageD.innerHTML+="Date: " + lastDateData;
             }
             
         }
-        storageN.innerHTML+="Last name: " + localStorage.getItem("name");
-        storageS.innerHTML+="last Score: "+localStorage.getItem("score");
-        storageD.innerHTML+="Date: " + localStorage.getItem("date");
-        
-
-        
     }
 
     secondbutton.onclick=function(){
         sessionStorage.setItem("name" , Entername.value );
-        location.href='../page2.html';
+        location.href='/page2.html';
         
     }
 
