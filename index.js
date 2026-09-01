@@ -12,6 +12,12 @@ window.addEventListener("load", function(){
     let storageS=this.document.querySelector(".storageScore");
     let storageD=this.document.querySelector(".storageDate");
 
+    // Safety checks
+    if(!startbutton || !Entername || !secondbutton) {
+        console.error("Missing required elements on page");
+        return;
+    }
+
     //event
     startbutton.onclick=function(){
         let levelchecked=document.querySelector("option:checked").value;

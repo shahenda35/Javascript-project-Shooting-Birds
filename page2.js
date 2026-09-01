@@ -7,13 +7,24 @@ window.addEventListener("load", function(){
     let Message=this.document.querySelector(".message");
     let imgs_Array=[`./images/bird1.gif` , `./images/bird2.gif` , `./images/bird3.gif`]
 
+    // Safety check - make sure required elements exist
+    if(!Timer || !Score || !kills || !birdsdiv || !Message) {
+        console.error("Missing required elements on page2");
+        return;
+    }
+
     //player
-    this.document.querySelector(".player").innerHTML+=sessionStorage.getItem("name");
+    let playerSpan = this.document.querySelector(".player");
+    if(playerSpan) {
+        playerSpan.innerHTML+=sessionStorage.getItem("name");
+    }
 
     let sum=0;
     let shot=0;
     Score.innerHTML="0";
     kills.innerHTML="0";
+    let birdsInt; // Declare before use
+    let bombint; // Declare before use
 
     //birds
     function FlyBirds(){
@@ -77,7 +88,7 @@ window.addEventListener("load", function(){
             
     }
     
-   let birdsInt=setInterval(FlyBirds,2000);
+    birdsInt=setInterval(FlyBirds,2000);
 
     //timer
     Timer.innerHTML='60';
@@ -193,7 +204,6 @@ window.addEventListener("load", function(){
         } 
         moveDown();
     }
-    let bombint = setInterval(bomb,5000);
+    bombint = setInterval(bomb,5000);
 
 })
- 
