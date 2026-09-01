@@ -1,13 +1,6 @@
-# Netlify Configuration for Shooting Birds Game
+# Netlify Configuration
 
 [build]
-  # No build process needed for vanilla JS
   publish = "."
-  command = ""
 
-[[headers]]
-  for = "/*"
-  [headers.values]
-    Cache-Control = "max-age=3600"
-    X-Content-Type-Options = "nosniff"
 
